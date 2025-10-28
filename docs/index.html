@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Descuentify | Descuentos, cupones y promociones en Argentina</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Descuentify" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- SEO principal -->
+  <meta name="description"
+    content="Landing oficial de Descuentify, la plataforma argentina de descuentos, cupones y promociones reales. Conectamos personas con comercios locales y oportunidades en todo el país. Descubrí más en descuentify.com" />
+  <meta name="keywords"
+    content="Descuentify, descuentos en Argentina, cupones, promociones, ofertas, Buenos Aires, Rosario, Mendoza, Córdoba, descuentos online, ahorrar, comercios argentinos, comunidad local, descuentos reales, plataforma de descuentos" />
+  <meta name="author" content="Descuentify" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#686ef2" />
+  <meta name="application-name" content="Descuentify" />
+  <link rel="canonical" href="https://descuentify.github.io" />
+
+  <!-- Geolocalización -->
+  <meta name="geo.region" content="AR-B" />
+  <meta name="geo.placename" content="Buenos Aires" />
+  <meta name="geo.position" content="-34.6037;-58.3816" />
+  <meta name="ICBM" content="-34.6037, -58.3816" />
+  <meta name="country" content="Argentina" />
+  <meta name="distribution" content="global" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Descuentify" />
+  <meta property="og:title" content="Descuentify | Promociones y descuentos reales en Argentina" />
+  <meta property="og:description"
+    content="Descubrí Descuentify: la plataforma argentina de descuentos y cupones. Conectamos personas y comercios locales. Visitá descuentify.com para más información." />
+  <meta property="og:image" content="https://www.descuentify.com/images/og-cover.png" />
+  <meta property="og:url" content="https://descuentify.github.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:updated_time" content="2025-10-28T12:00:00-03:00" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@descuentify" />
+  <meta name="twitter:creator" content="@descuentify" />
+  <meta name="twitter:title" content="Descuentify | Descuentos y cupones reales en Argentina" />
+  <meta name="twitter:description"
+    content="Landing promocional oficial de Descuentify, la plataforma argentina que conecta personas con oportunidades reales. Visitá descuentify.com y descubrí más." />
+  <meta name="twitter:image" content="https://www.descuentify.com/images/og-cover.png" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Descuentify Landing",
+    "alternateName": "Descuentify Argentina",
+    "url": "https://descuentify.github.io",
+    "description": "Landing oficial de Descuentify, la plataforma argentina de descuentos y promociones.",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "Descuentify",
+      "url": "https://www.descuentify.com"
+    },
+    "sameAs": [
+      "https://twitter.com/descuentify",
+      "https://www.descuentify.com"
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHW56624MX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-NHW56624MX');
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --violet-500: #686ef2;
+      --violet-700: #4e54be;
+      --violet-100: #f5f6ff;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      height: 1000px;
+      background: radial-gradient(circle, rgba(104, 110, 242, 0.07), transparent 70%);
+      filter: blur(160px);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .glass {
+      backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(230, 230, 255, 0.35);
+      box-shadow: 0 6px 25px rgba(104, 110, 242, 0.08);
+    }
+
+    .gradient-btn {
+      background: linear-gradient(90deg, var(--violet-500), #9b6ef2);
+      box-shadow: 0 4px 20px rgba(104, 110, 242, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .gradient-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(104, 110, 242, 0.45);
+    }
+
+    .section {
+      padding: 4rem 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 3rem 1rem;
+      }
+    }
+
+    lottie-player {
+      max-width: 420px !important;
+      max-height: 420px !important;
+    }
+
+    @media (max-width: 768px) {
+      lottie-player {
+        max-width: 300px !important;
+        max-height: 300px !important;
+      }
+    }
+
+    .card {
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
+
+</head>
+
+<body class="flex flex-col items-center">
+
+  <div class="blob"></div>
+  <div class="blob"></div>
+
+  <div class="sr-only">
+    Descuentify.netlify.app es la landing promocional oficial de Descuentify.com, la plataforma argentina de descuentos,
+    cupones y promociones.
+    Conectamos personas con comercios locales en todo el país, incluyendo Buenos Aires, Córdoba, Rosario, Mendoza,
+    Tucumán y más.
+    Descubrí descuentos reales, beneficios gastronómicos, tecnología, viajes, indumentaria, turismo y entretenimiento.
+    Apoyamos a los comercios argentinos desde 2021 fomentando el consumo local y el ahorro inteligente.
+    Descuentify es una marca registrada en Argentina y Latinoamérica.
+  </div>
+
+  <header class="section text-center max-w-3xl">
+    <img src="./descuentify.svg" alt="Logo Descuentify - plataforma argentina de descuentos"
+      class="w-56 md:w-64 mx-auto mb-8 drop-shadow-lg" />
+
+    <h1
+      class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-[var(--violet-700)] to-[var(--violet-500)] bg-clip-text text-transparent leading-tight">
+      Conectamos personas con oportunidades reales
+    </h1>
+
+    <p class="text-lg md:text-xl text-[#5558b6] mt-5 leading-relaxed max-w-2xl mx-auto">
+      Somos una <strong>plataforma argentina de descuentos, cupones y promociones</strong>
+      que nació con una idea simple: acercar personas y comercios locales, fomentando una comunidad que valora
+      el ahorro, la cercanía y la confianza 🇦🇷
+    </p>
+
+    <lottie-player src="./growth-illustration.json" background="transparent" speed="1" style="margin: 3rem auto;" loop
+      autoplay></lottie-player>
+
+    <button onclick="window.open('https://www.descuentify.com','_blank')"
+      class="gradient-btn text-white px-12 py-5 rounded-full text-lg font-semibold mt-4">
+      Visitá Descuentify.com 🎟️
+    </button>
+  </header>
+
+  <section class="section flex flex-col md:flex-row flex-wrap items-stretch justify-center gap-8">
+    <article class="glass card rounded-3xl text-center max-w-sm hover:scale-[1.02] transition-transform">
+      <lottie-player src="./business-analytics.json" background="transparent" speed="1" style="margin: 0 auto 1rem;"
+        loop autoplay></lottie-player>
+      <div>
+        <h2 class="text-2xl font-semibold text-[var(--violet-700)] mt-3">Apoyamos lo nuestro</h2>
+        <p class="text-[#5a5abf] mt-3">
+          Cada cupón impulsa un comercio argentino. En Descuentify creemos que apoyar lo local es la mejor forma de
+          crecer
+          juntos. Promovemos la economía nacional con responsabilidad.
+        </p>
+      </div>
+    </article>
+
+    <article class="glass card rounded-3xl text-center max-w-sm hover:scale-[1.02] transition-transform">
+      <lottie-player src="./verified.json" background="transparent" speed="1" style="margin: 0 auto 1rem;" loop
+        autoplay></lottie-player>
+      <div>
+        <h2 class="text-2xl font-semibold text-[var(--violet-700)] mt-3">Promociones con propósito</h2>
+        <p class="text-[#5a5abf] mt-3">
+          Ofrecemos descuentos seleccionados con responsabilidad y transparencia, asegurando que cada usuario encuentre
+          valor real sin intermediarios.
+        </p>
+      </div>
+    </article>
+
+    <article class="glass card rounded-3xl text-center max-w-sm hover:scale-[1.02] transition-transform">
+      <lottie-player src="./computer.json" background="transparent" speed="1" style="margin: 0 auto 1rem;" loop
+        autoplay></lottie-player>
+      <div>
+        <h2 class="text-2xl font-semibold text-[var(--violet-700)] mt-3">Cercanía y confianza</h2>
+        <p class="text-[#5a5abf] mt-3">
+          Descubrí negocios argentinos que apuestan por la comunidad. Descuentify conecta personas, comercios y
+          oportunidades reales con impacto local.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section text-center max-w-3xl border-t border-[#e3e5ff]/60 pt-12">
+    <h2
+      class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[var(--violet-700)] to-[var(--violet-500)] bg-clip-text text-transparent mb-5">
+      Sumate a Descuentify
+    </h2>
+
+    <p class="text-lg md:text-xl text-[#5054b3] mb-8 leading-relaxed">
+      Si tenés un comercio o emprendimiento, este es tu lugar.
+      Fidelizá nuevos clientes, impulsá tu negocio y crecé formando parte de una comunidad que apoya lo nuestro.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <span class="glass px-6 py-3 rounded-full text-[var(--violet-700)] font-semibold">Fidelizá clientes</span>
+      <span class="glass px-6 py-3 rounded-full text-[var(--violet-700)] font-semibold">Aumentá tus ventas</span>
+      <span class="glass px-6 py-3 rounded-full text-[var(--violet-700)] font-semibold">Crecé con nosotros</span>
+    </div>
+
+    <button onclick="window.open('https://www.descuentify.com/suma-tu-comercio','_blank')"
+      class="gradient-btn text-white px-12 py-5 rounded-full text-lg font-semibold">
+      Sumá tu comercio 🚀
+    </button>
+
+    <footer class="mt-12 text-sm text-[#7578c2]">
+      © 2025 Descuentify — Landing promocional de
+      <a href="https://www.descuentify.com" target="_blank"
+        class="underline text-[var(--violet-700)]">descuentify.com</a>
+    </footer>
+  </section>
+</body>
+
+</html>
